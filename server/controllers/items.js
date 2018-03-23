@@ -15,7 +15,6 @@ module.exports = {
   getItem: async (req, res) => {
     try {
       const item = await Items.find({ _id: req.params.itemId });
-      console.log(item);
       res.status(200).json(item);
     } catch (error) {
       res.send(error);
