@@ -5,9 +5,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 if (process.env.NODE_ENV === 'test') {
-    mongoose.connect('mongodb://localhost/secondhand-test', { useMongoClient: true });
+    mongoose.connect('mongodb://localhost/chopshop-test', { useMongoClient: true });
 } else {
-    mongoose.connect('mongodb://localhost/secondhand', { useMongoClient: true });
+    mongoose.connect('mongodb://localhost/chopshop', { useMongoClient: true });
 }
 
 // Initialize Application
